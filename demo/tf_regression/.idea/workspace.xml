@@ -17,6 +17,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/reserves/deep-learning/tf2lesson/demo/tf_regression",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
@@ -55,6 +58,7 @@
       <workItem from="1663414270281" duration="142000" />
       <workItem from="1663414424201" duration="606000" />
       <workItem from="1663488220364" duration="4042000" />
+      <workItem from="1663575394102" duration="263000" />
     </task>
     <servers />
   </component>
@@ -63,7 +67,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>7</line>
+          <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
