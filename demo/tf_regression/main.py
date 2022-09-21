@@ -1,21 +1,16 @@
-import pathlib
-
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
 import tensorflow as tf
 
-from tensorflow import keras
-from tensorflow.keras import layers
-
 print(tf.__version__)
 
 # ============================================================================================================
 # 获取数据
 # 首先下载数据集。
-dataset_path = keras.utils.get_file("auto-mpg.data",
-                                    "http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data")
+dataset_path = tf.keras.utils.get_file("auto-mpg.data",
+                                       "http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data")
 print(dataset_path)
 # 使用 pandas 导入数据集
 column_names = ['MPG', 'Cylinders', 'Displacement', 'Horsepower', 'Weight', 'Acceleration', 'Model Year', 'Origin']
@@ -82,10 +77,10 @@ normed_test_data = norm(test_dataset)
 # 让我们来构建我们自己的模型。这里，我们将会使用一个“顺序”模型，其中包含两个紧密相连的隐藏层，以及返回单个、连续值得输出层。
 # 模型的构建步骤包含于一个名叫 'build_model' 的函数中，稍后我们将会创建第二个模型。 两个密集连接的隐藏层
 def build_model():
-    m = keras.Sequential([
-        layers.Dense(64, activation='relu', input_shape=[len(train_dataset.keys())]),
-        layers.Dense(64, activation='relu'),
-        layers.Dense(1)
+    m = tf.keras.Sequential([
+        tf.keras.layers.Dense(64, activation='relu', input_shape=[len(train_dataset.keys())]),
+        tf.keras.layers.Dense(64, activation='relu'),
+        tf.keras.layers.Dense(1)
     ])
     optimizer = tf.keras.optimizers.RMSprop(0.001)
     m.compile(loss='mse', optimizer=optimizer, metrics=['mae', 'mse'])
