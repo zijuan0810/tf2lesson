@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6674ca0-3284-4c48-a2d1-96169647d032" name="Changes" comment="" />
+    <list default="true" id="88dea5fd-7309-4b7d-a2c7-7f57521e3fb8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +10,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2F2JYun8rZ0KEiWI1xLFmFIeABC" />
+  <component name="ProjectId" id="2F4WePezeKzyktauw8wo1sdY9km" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,14 +18,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/reserves/deep-learning/tf2lesson/zh_d2l_ai/d2l_ndarray",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Python"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="d2l_ndarray" />
+      <module name="d2l-2.4-calculus" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -50,17 +48,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d6674ca0-3284-4c48-a2d1-96169647d032" name="Changes" comment="" />
-      <created>1663684300914</created>
+      <changelist id="88dea5fd-7309-4b7d-a2c7-7f57521e3fb8" name="Changes" comment="" />
+      <created>1663751931931</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1663684300914</updated>
-      <workItem from="1663684304958" duration="2314000" />
-      <workItem from="1663721820450" duration="5916000" />
+      <updated>1663751931931</updated>
+      <workItem from="1663751933275" duration="835000" />
     </task>
     <servers />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/d2l_ndarray$main.coverage" NAME="main Coverage Results" MODIFIED="1663729812872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
