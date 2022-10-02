@@ -15,11 +15,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="d2l-3.2-linear-regression-scratch" />
@@ -53,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664089173925</updated>
       <workItem from="1664089175202" duration="4010000" />
+      <workItem from="1664408868684" duration="34000" />
     </task>
     <servers />
   </component>
