@@ -6,11 +6,17 @@ from d2l import tensorflow as d2l
 
 def synthetic_data(w, b, num_examples):
     """生成y=Xw + b + 噪声"""
-    X = tf.zeros((num_examples, w.shape[0]))
-    X += tf.random.normal(shape=X.shape)
-    y = tf.matmul(X, tf.reshape(w, (-1, 1))) + b
+    # 生成随机正态分布数据[1000,2]，即1000行2列
+    X = tf.random.normal(shape=(num_examples, w.shape[0]))
+    print(X)
+
+    # 为了满足矩阵乘法规则，将一维向量shape=(2,)转换为列向量shape=(2, 1)
+    w1 = tf.reshape(w, (-1, 1))  # -1表示该维度通过计算得出，等价于tf.reshape(w, (2, 1))
+    # 计算y=Xw + b
+    y = tf.matmul(X, w1) + b
+    # 添加符合正态分布的噪声
     y += tf.random.normal(shape=y.shape, stddev=0.01)
-    y = tf.reshape(y, (-1, 1))
+    y = tf.reshape(y, (-1, 1)) #这步可以不需要，因为上面已经生成了(1000, 1)向量
     return X, y
 
 
@@ -42,19 +48,19 @@ def sgd(params, grads, lr, batch_size):
         param.assign_sub(lr * grad / batch_size)
 
 
-
 true_w = tf.constant([2, -3.4])
 true_b = 4.2
 features, lables = synthetic_data(true_w, true_b, 1000)
-print('features: ', features[0], '\nlablel:', lables[0])
+print('features: ', features.shape, '\nlablel:', lables.shape)
 # d2l.plt.scatter(features[:, 1].numpy(), lables.numpy(), 1)
 # d2l.plt.show()
 
 batch_size = 10
-# for X, y in data_iter(batch_size, features, lables):
-#     print(X, '\n', y)
-#     break
+for X, y in data_iter(batch_size, features, lables):
+    print(X, '\n', y)
+    break
 
+"""
 w = tf.Variable(tf.random.normal(shape=(2, 1), mean=0, stddev=0.001), trainable=True)
 b = tf.Variable(tf.zeros(1), trainable=True)
 
@@ -77,3 +83,4 @@ for epoch in range(num_epochs):
 
 print(f'w的估计误差：{true_w - tf.reshape(w, true_w.shape)}')
 print(f'b的估计误差：{true_b - b}')
+"""
